@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 9044175165022394339}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -228,11 +228,11 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 0.06385061, b: 0, a: 1}
-        key1: {r: 0.8372941, g: 1, b: 0, a: 1}
-        key2: {r: 0, g: 1, b: 0.723886, a: 1}
-        key3: {r: 0.91886795, g: 1, b: 0.97394526, a: 0}
+        key1: {r: 1, g: 0.52003396, b: 0, a: 1}
+        key2: {r: 1, g: 0.9277062, b: 0, a: 1}
+        key3: {r: 0.8679245, g: 0.36031038, b: 0, a: 0}
         key4: {r: 0.103773594, g: 0, b: 0, a: 0}
-        key5: {r: 0, g: 0, b: 0, a: 0}
+        key5: {r: 0.103773594, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
@@ -240,7 +240,7 @@ ParticleSystem:
         ctime2: 31804
         ctime3: 51657
         ctime4: 65535
-        ctime5: 0
+        ctime5: 65535
         ctime6: 0
         ctime7: 0
         atime0: 47031
@@ -252,7 +252,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
+        m_ColorSpace: 0
         m_NumColorKeys: 5
         m_NumAlphaKeys: 2
       minGradient:

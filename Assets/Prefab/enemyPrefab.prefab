@@ -182,7 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barrelEnd: {fileID: 3690704591078884647}
   projectilePrefab: {fileID: 3247169660693311576, guid: 1b7a39a1cb6710f4e88a7390de409b52, type: 3}
-  fireRate: 0.5
+  fireRate: 0.1
   maxDistance: 100
 --- !u!136 &2342817421847172046
 CapsuleCollider:
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDistance: 0.1
-  moveSpeed: 200
+  moveSpeed: 150
   navAgent: {fileID: 4728850760590220627}
   distanceToPlayer: 0
 --- !u!195 &4728850760590220627
@@ -249,8 +249,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.0018707917
-  m_Speed: 200
-  m_Acceleration: 10
+  m_Speed: 150
+  m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 200
   m_StoppingDistance: 0

@@ -73,14 +73,24 @@ public class CollisionHandler : MonoBehaviour
             indicators[i].SetActive(i < indicators.Length - hitCount);
         }
     }
-
     private void StartCrashSequence()
     {
         hasCrashed = true;
         crashVFX.Play();
 
-        // Optionally, disable player mesh renderers or controls here
-        // GetComponent<PlayerControls>().enabled = false; // Example for disabling player controls
+        // Disable the player's mesh renderers in all grandchildren
+        MeshRenderer[] childRenderers = GetComponentsInChildren<MeshRenderer>(true);
+        foreach (MeshRenderer rend in childRenderers)
+        {
+            rend.enabled = false;
+        }
+
+        // Disable player controls, assuming there is a script named PlayerControls for this purpose
+        PlayerControls playerControls = GetComponent<PlayerControls>();
+        if (playerControls != null)
+        {
+            playerControls.enabled = false;
+        }
 
         StartCoroutine(ReloadLevelWithDelay());
     }
